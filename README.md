@@ -1,0 +1,2 @@
+La motivación de este repositorio es tener localizados todos los programas simples de testing para cada una de las entradas y salidas del proyecto en un solo lugar.
+Cada carpeta puede tomarse como un proyecto individual desde el Arduino IDE.
