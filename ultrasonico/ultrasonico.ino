@@ -4,8 +4,8 @@
 
 // Declaración de defines.
 
-#define COMBUSTIBLE_ECHO_PIN 5
-#define COMBUSTIBLE_TRIG_PIN 6
+#define COMBUSTIBLE_ECHO_PIN 6
+#define COMBUSTIBLE_TRIG_PIN 5
 #define PING_SAMPLES 5           // Cantidad de muestras ultrasónicos.
 
 // Declaración de variables.
