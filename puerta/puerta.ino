@@ -2,8 +2,8 @@
 
 // Declaración de defines.
 #define PUERTA_PIN 6
-#define PUERTA_ACTIVA LOW    // Señal entrante cuando la puerta está abierta.
-#define PUERTA_INACTIVA HIGH // Señal entrante cuando la puerta está cerrada.
+#define PUERTA_ACTIVA HIGH    // Señal entrante cuando la puerta está abierta.
+#define PUERTA_INACTIVA LOW // Señal entrante cuando la puerta está cerrada.
 
 // Declaración de variables.
 
@@ -27,7 +27,8 @@ void setup() {
 // Rutina del arduino.
 
 void loop() {
-    doorObserver();
+    // doorObserver();
+    digitalPinObserver(PUERTA_PIN);
 }
 
 //////////////////////////////////////////////////////////////
@@ -49,5 +50,13 @@ void doorObserver() {
             doorOpen = false;
             Serial.println("Se ha cerrado la puerta!");
         }
+    }
+}
+
+void digitalPinObserver(int pin) {
+    if (digitalRead(pin) == HIGH) {
+        Serial.println(1);
+    } else {
+        Serial.println(0);
     }
 }
